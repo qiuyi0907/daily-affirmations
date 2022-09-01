@@ -6,7 +6,6 @@ const sentences = [
   "I am so happy and grateful that I have reached my ideal weight.",
   "I am in the right place at the right time, doing the right thing.",
   "I am successful.",
-  "I am confident.",
   "I am powerful.",
   "I am strong.",
   "I am getting better and better every day.",
@@ -59,4 +58,4 @@ const sentences = [
 
 const random = Math.floor(Math.random() * sentences.length);
 
-console.log(sentences[random]);
+document.getElementById("sentence").innerHTML = sentences[random];
