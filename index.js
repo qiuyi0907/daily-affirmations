@@ -57,33 +57,47 @@ const sentences = [
 ];
 
 const random = Math.floor(Math.random() * sentences.length);
-
 document.getElementById("sentence").innerHTML = sentences[random];
-
 
 const submitButton = document.getElementById("submit-btn");
 const sentenceContainer = document.getElementById("sentence-container");
 const warningSentence = document.getElementById("warning");
-const changeDisplay = function() {
+const changeDisplay = function () {
   if (sentenceContainer.style.display === "none") {
     sentenceContainer.style.display = "flex";
   } else {
-    console.log('should not click one more time')
+    console.log("should not click one more time");
     warningSentence.style.display = "block";
   }
-}
+};
 submitButton.onclick = changeDisplay;
 
-
 const settingButton = document.getElementById("setting");
-const settingContainer = document.getElementById("setting-container")
-
-const settingDisplay = function() {
+const settingContainer = document.getElementById("setting-container");
+const settingDisplay = function () {
   if (settingContainer.style.display === "flex") {
-    settingContainer.style.display = "none"
+    settingContainer.style.display = "none";
   } else {
-    settingContainer.style.display = "flex"
+    settingContainer.style.display = "flex";
   }
+};
+settingButton.onclick = settingDisplay;
+
+// Set background
+const backgroundContainers =
+  document.getElementsByClassName("background-color");
+for (let i = 0; i < backgroundContainers.length; i++) {
+  backgroundContainers[i].onclick = function () {
+    let backgroundString = `url('./img/${i + 1}.jpg')`
+    document.body.style.backgroundImage = backgroundString;
+  };
 }
 
-settingButton.onclick = settingDisplay;
+// Set Font Family
+const fontContainers = document.getElementsByClassName("diffFont");
+for (let i = 0; i < fontContainers.length; i++) {
+  fontContainers[i].onclick = function() {
+    let currentFont = fontContainers[i].style.fontFamily;
+    document.getElementById("sentence").style.fontFamily = currentFont;
+  }
+}
