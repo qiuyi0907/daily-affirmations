@@ -1,3 +1,4 @@
+/* General Setting */
 * {
   box-sizing: border-box;
   font-family: "Exo", sans-serif;
@@ -11,6 +12,11 @@ body {
   color: black;
 }
 
+strong {
+  font-weight: 600;
+}
+
+/* Header */
 .header {
   width: 80vw;
   height: 15vh;
@@ -20,11 +26,11 @@ body {
   justify-content: space-between;
 }
 
-.setting {
+#setting {
   cursor: pointer;
 }
 
-.setting:hover {
+#setting:hover {
   color: white;
 }
 
@@ -33,9 +39,57 @@ body {
   font-size: 0.75rem;
 }
 
+/* Sidebar */
+#setting-container {
+  background-color: rgba(0, 0, 0, 0.187);
+  border-radius: 30px;
+  width: 80vw;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-div {
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 1;
+}
+
+.color-div:hover {
+  transform: scale(1.1);
+}
+
+.background-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fontcolor-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.font-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.font-color > span {
+  font-size: 2rem;
+}
+
+
+/* Main body */
 .main {
   width: 50vw;
-  height: 100vh;
+  height: 120vh;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -68,7 +122,7 @@ body {
 
 .input-section {
   width: 80%;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

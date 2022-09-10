@@ -73,3 +73,17 @@ const changeDisplay = function() {
   }
 }
 submitButton.onclick = changeDisplay;
+
+
+const settingButton = document.getElementById("setting");
+const settingContainer = document.getElementById("setting-container")
+
+const settingDisplay = function() {
+  if (settingContainer.style.display === "flex") {
+    settingContainer.style.display = "none"
+  } else {
+    settingContainer.style.display = "flex"
+  }
+}
+
+settingButton.onclick = settingDisplay;
