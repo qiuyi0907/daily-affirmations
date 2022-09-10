@@ -4,18 +4,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Affirmation</title>
+    <title>Daily Tarot</title>
 
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant:wght@300&family=Cutive+Mono&family=Exo:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Exo:wght@300;400;500&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/de09e3192f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="setting">
+    <div class="header">
+      <p>Daily Affirmation | Get Your Positive Energy of the day</p>
+      <div class="setting">
+        <i class="fa-solid fa-paint-roller"></i>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="title">
+        <h1>Daily Affirmation</h1>
+        <p>There's real power in positive thinking — and that's a fact backed by science. 
+          When you practice self-affirmation regularly, you can actually reduce your stress 
+          levels and set yourself up for successful outcomes in the real world. Positive 
+          affirmations don't need to be anything fussy or formal but simply and short. 
+          Get your affirmation of the day here. Try posting it on a wall where you can see 
+          frequently, or writing it down on the top of your daily to-do list. Keep doing it 
+          for a month, you will see how positive thinking change your life. </p>
+      </div>
+
+      <div class="beforeStartReading">
+        <h2>Before you start</h2>
+        <p>
+          Clear your mind. The affirmation you get will pick up on your energy
+          today. So, it's important to keep a de-cluttered mind. Meanwhile
+          thinking about ONE thing that you want to get positive energy for most today. 
+          The universe will send you energy very soon.
+        </p>
+      </div>
+
+      <div class="input-container">
+        <div class="input-section">
+          <label for="name">What's your name ?</label>
+          <input id="name" name="name" class="input" />
+        </div>
+
+        <div class="input-section">
+          <label for="birthday">When is your birthday</label>
+          <input type="date" id="birthday" name="birthday" class="input" />
+        </div>
+
+        <p class="instruction">
+          Before you click this button, please repeat your question in your mind.
+          But, remember you can only get energy once a day.
+        </p>
+
+        <input name="submit" value="Get your daily affirmation" type="submit" id="submit-btn"/>
+        <p id="warning" style="display:none">You can only choose your positive affirmation once a day!</p>
+      </div>
+    </div>
+
+    <div id="sentence-container" style="display:none">  
+      <!--  -->
+      <p id="sentence"></p>
+    </div>
+
+    <hr class="divider"></hr>
+
+    <div class="footer">
+      <div class="footer-section">
+          <h3 class="footer-section-title">Phone:</h3>
+          <p class="footer-section-content">(613)-583-6190</p>
+      </div>
+      <div class="footer-section">
+          <h3 class="footer-section-title">Email:</h3>
+          <p class="footer-section-content">wqysdmn0907@gmail.com</p>
+      </div>
+      <div class="footer-section">
+          <h3 class="footer-section-title">Follow me: </h3>
+          <p class="footer-section-content">
+              <a href="https://www.linkedin.com/in/qiuyiwang-annie/" class="social-media" target="_blank" aria-label="View LinkedIn page"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/qiuyi0907" class="social-media" target="_blank" aria-label="View GitHub page"><i aria-hidden="true" class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/_qiu._/" class="social-media" target="_blank" aria-label="View Instagram page"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+          </p>
+      </div>
+      <div class="footer-section">
+          <p class="footer-section-content">&copy;2022 Qiuyi Wang</p>
+      </div>
+  </div>
+
+
+
+
+    
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- <div class="setting">
       <div class="background-container">
         <div
           class="background-color color-div"
@@ -64,12 +153,6 @@
         <div class="font-color color-div" style="font-family: 'Cutive Mono', monospace;"><span>font</span></div>
         <div class="font-color color-div" style="font-family: 'Exo', sans-serif;"><span>font</span></div>
       </div>
-    </div>
-    <div class="sentence-container">
-      <p id="sentence"></p>
-    </div>
+    </div> -->
 
-    <embed class="background-music" src="background-music.mp3" />
-    <script src="index.js"></script>
-  </body>
-</html>
+<!-- <embed class="background-music" src="background-music.mp3" /> -->

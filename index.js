@@ -59,3 +59,17 @@ const sentences = [
 const random = Math.floor(Math.random() * sentences.length);
 
 document.getElementById("sentence").innerHTML = sentences[random];
+
+
+const submitButton = document.getElementById("submit-btn");
+const sentenceContainer = document.getElementById("sentence-container");
+const warningSentence = document.getElementById("warning");
+const changeDisplay = function() {
+  if (sentenceContainer.style.display === "none") {
+    sentenceContainer.style.display = "flex";
+  } else {
+    console.log('should not click one more time')
+    warningSentence.style.display = "block";
+  }
+}
+submitButton.onclick = changeDisplay;
