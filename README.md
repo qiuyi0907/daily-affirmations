@@ -8,18 +8,18 @@ I got inspired by the daily affirmation video on youtube and created this websit
 
 
 ### Short Introduction
-This app project is a static website that made with HTML, CSS and JavaScript only. 
-This is the first project I made during studying full-stack development in Codeacademy.
+This app project is a static website that is made with HTML, CSS and JavaScript only. 
+This is the first project I made during studying full-stack development at Codeacademy.
 
 
 ### Purpose of this app
 The main purpose of the website is to provide a daily positive affirmation to the user based on their name and date of birth.
 Users are recommended to post the sentence on a wall where they can see it frequently, or write it down at the top of their daily to-do list.
-By doing so, they can get positive energy from their unconscious mind which will lead to a good result in their real life.
+By doing so, they can get positive energy from their unconscious mind which will lead to good results in their real life.
 
 
 ### How to start
-Click the link to open the app.
+Click the link to open the app: [Daily Affirmation](https://qiuyi0907.github.io/daily-affimration/index.html)
 
 ### How to use
 - Enter your name.
@@ -27,15 +27,15 @@ Click the link to open the app.
 - Get your daily affirmation!
 
 ### Important features
-- The app provide a few options of background image and font. User can choose whichever they like. Options can be found by clicking the painting icon on the right-top of the page.
+- The app provides a few options for background image and font. Users can choose whichever they like. Options can be found by clicking the painting icon on the right-top of the page.
  ![Use Case Diagram](./img/md1.png)
-- User can only get one affirmation per day. When user try to get more affirmations, the warning sentence will pop out.
+- User can only get one affirmation per day. When the user tries to get more affirmations, the warning sentence will pop out.
  ![Use Case Diagram](./img/md2.png)
 
 
 ### What I learned from this project
--How to make website more interactive by using DOM and JavaScript. for example, using onclick function to display or hide setting component and using if condition to trigger warning sentence.
-Responsive design on landsacpe and different type of mobile devices.
+- How to make a website interactable by using DOM and JavaScript. For example, using the onclick function to display or hide the setting component and using the if condition to trigger a warning sentence.
+- Responsive design on landscape and different types of mobile devices.
 
 ### Contributor
 [Qiuyi Wang](https://github.com/qiuyi0907)
